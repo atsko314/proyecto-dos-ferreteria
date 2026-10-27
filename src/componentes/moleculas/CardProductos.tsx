@@ -16,7 +16,7 @@ function CardProductos({titulo, descripcion, precio, imagen}: CardProps){
                 className="card-img-top"
                 alt={titulo}
             />
-            <div className="card-body">
+            <div className="card-body d-flex flex-column">
 
                 <h5 className="card-title">
                     {titulo}
@@ -30,10 +30,13 @@ function CardProductos({titulo, descripcion, precio, imagen}: CardProps){
                     ${precio}
                 </p>
 
-                <Boton />
+                <div className="d-flex gap-2 mt-auto">
+                    <Boton texto="Ver detalle"></Boton>
+                    <Boton texto="Agregar al carrito"></Boton>
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default CardProductos;
