@@ -22,3 +22,13 @@ body {
   background-color: #f5f5dc;
   border-color: #122f23;
 }
+.btn-detalle {
+  background-color: #122f23 !important;
+  color: #f5f5dc !important;
+  border: none !important;
+}
+.btn-carrito {
+  background-color: #f5f5dc !important;
+  color: #122f23 !important;
+  border: none !important;
+}

@@ -12,23 +12,23 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarScroll">
                     <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li className="nav-item">
-                            <Link className="nav-link" aria-current="page" to="/">Materiales de construcción</Link>
+                            <Link className="nav-link" aria-current="page" to="/productos/materiales-construccion">Materiales de construcción</Link>
                         </li>
                         
                         <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Herramientas</Link>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to="#">eléctricas</Link></li>
+                                <li><Link className="dropdown-item" to="/productos/electricas">eléctricas</Link></li>
                                 <li><hr className="dropdown-divider"/></li>
-                                <li><Link className="dropdown-item" to="#">Manuales</Link></li>
+                                <li><Link className="dropdown-item" to="/productos/manuales">Manuales</Link></li>
                             </ul>
                         </li>
                         
                         <li className="nav-item">
-                            <Link className="nav-link" to="#">gasfitería</Link>
+                            <Link className="nav-link" to="/productos/gasfiteria">gasfitería</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="#">electricidad</Link>
+                            <Link className="nav-link" to="/productos/electricidad">electricidad</Link>
                         </li>
                     </ul>
 

@@ -1,6 +1,9 @@
 import Navbar from './componentes/organismos/Navbar';
 import Titulo from './componentes/atomos/Titulo';
-import Carrusel from './componentes/organismos/Carrusel';
+import { Routes } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import Inicio from './paginas/Inicio';
+import Productos from './paginas/Productos';
 
 function App() {
   return (
@@ -9,7 +12,13 @@ function App() {
 
       <Titulo/>
       <Navbar />
-      <Carrusel/>
+
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+
+        <Route path="/productos/:categoria" element={<Productos />} />
+      </Routes>
+      
 
     </div>
   );

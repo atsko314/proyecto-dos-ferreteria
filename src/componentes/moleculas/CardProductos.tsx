@@ -9,31 +9,36 @@ interface CardProps{
 
 function CardProductos({titulo, descripcion, precio, imagen}: CardProps){
     return (
-        <div className="card" style={{width: "18rem"}}>
+        <div className="card h-100" style={{width: "20rem"}}>
 
             <img
                 src={imagen}
                 className="card-img-top"
                 alt={titulo}
+                style={{height: "200px", objectFit: "contain"}}
             />
             <div className="card-body d-flex flex-column">
 
-                <h5 className="card-title">
-                    {titulo}
-                </h5>
+                <div>
+                    <h5 className="card-title" style={{minHeight: "3rem"}}>
+                        {titulo}
+                    </h5>
 
-                <p className="card-text">
-                    {descripcion}
-                </p>
+                    <p className="card-text" style={{minHeight: "3rem"}}>
+                        {descripcion}
+                    </p>
 
-                <p className="card-text">
-                    ${precio}
-                </p>
+                    <p className="card-text" style={{minHeight: "1rem"}}>
+                        ${precio.toLocaleString('es-CL')}
+                    </p>
 
-                <div className="d-flex gap-2 mt-auto">
-                    <Boton texto="Ver detalle"></Boton>
-                    <Boton texto="Agregar al carrito"></Boton>
-                </div>
+                    <div className="mt-auto">
+                        <Boton className="btn-detalle "texto="Ver detalle"></Boton>
+                        <Boton className="btn-carrito "texto="Agregar al carrito"></Boton>
+                    </div>
+              </div>
+
+
             </div>
         </div>
     );
