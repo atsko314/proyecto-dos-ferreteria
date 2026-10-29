@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import CardProductos from "../componentes/moleculas/CardProductos";
 
-const listaProductos = [
+export const listaProductos = [
   {
     //--MATERIALES DE CONSTRUCCION--
     id: 1,
@@ -355,10 +355,9 @@ const listaProductos = [
 ];
 
 function Productos() {
-  // Leemos el parámetro :categoria de la URL
+  
   const { categoria } = useParams<{ categoria?: string }>();
 
-  // Si hay una categoría en la URL filtramos el arreglo, de lo contrario mostramos todos
   const productosFiltrados = categoria
     ? listaProductos.filter((prod) => prod.categoria === categoria)
     : listaProductos;

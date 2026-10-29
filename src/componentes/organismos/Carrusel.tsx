@@ -10,26 +10,14 @@ function Carrusel(){
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img src="/imagenes/img1.png" className="carrusel-img w-100" alt="22 años de trayectoria" />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>22 años de trayectoria</h5>
-            <p>Trabajamos con la mejor calidad de servicio.</p>
-          </div>
         </div>
 
         <div className="carousel-item">
           <img src="/imagenes/img2.webp" className="carrusel-img w-100" alt="Todo lo que necesitas" />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>Todo lo que necesitas</h5>
-            <p>Materiales de construcción, herramientas eléctricas y manuales, gasfitería, electricidad.</p>
-          </div>
         </div>
 
         <div className="carousel-item">
           <img src="/imagenes/imFER.png" className="carrusel-img w-100" alt="¡Visítanos!" />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>¡¡Visítanos!!</h5>
-            <p>Nos encontramos en La Serena, Región de Coquimbo.</p>
-          </div>
         </div>
       </div>
 

@@ -35,13 +35,13 @@ function Navbar() {
                    <form className="d-flex">
                         <ul className="nav justify-content-end" barra-sup>
                             <li className="nav-item">
-                                <Link className="nav-link active" aria-current="page" to="#">Iniciar sesión</Link>
+                                <Link className="navegacion nav-link active" aria-current="page" to="/iniciarSesion">Iniciar sesión</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="crearCuenta.html">Crear cuenta</Link>
+                                <Link className="navegacion nav-link" to="/crearCuenta">Crear cuenta</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="contacto.html">Contacto</Link>
+                                <Link className="navegacion nav-link" to="/contacto">Contacto</Link>
                             </li>
                         </ul>
                             
